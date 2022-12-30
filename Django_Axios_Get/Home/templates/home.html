@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% load static %}
+<body>
+    <div align=" center">
+
+        <h1>Welcome to Student Management System</h1>
+        <h2>CRUD OPTIONS ARE</h2>
+        <a href="{%url 'Home:add' %}">
+            <button id = "add"> Add New Student</button>
+        </a>
+        <a href="{% url 'Home:show' %}">
+            <button id = "display"> Students History</button>
+        </a>
+        <a href="#">
+            <button>Coming Soon 1</button>
+        </a>
+        <a href="#">
+            <button>Coming Soon 2</button>
+        </a>
+    </div>
+
+
+
+
+</body>
+</html>

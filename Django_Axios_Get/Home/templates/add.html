@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Info</title>
+</head>
+{% load static %}
+<body>
+    <div align = "center">
+        <form action="" id = "info">
+            <table>
+                <tr>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id = "name"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                </tr>
+                <tr>
+                    <td><input type="date" id = "dob"></td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                </tr>
+                <tr>
+                    <td><select  id="degree">
+
+                        <option selected disabled>Choose Here</option>
+                        
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Subject</td>
+                </tr>
+                <tr>
+                    <td><select  id="subject">
+
+                        <option selected disabled>Choose Here</option>
+                        
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type = "submit">Submit</button></td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+
+    
+<script src="{% static '/js/add.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+</body>
+</html>

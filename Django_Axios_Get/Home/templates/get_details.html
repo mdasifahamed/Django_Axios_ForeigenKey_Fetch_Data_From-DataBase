@@ -1,0 +1,10 @@
+{% for student in students %}
+    <tr>
+        <td>{{student.name}}</td>
+        <td>{{student.dob}}</td>
+        <td>{{student.course_enrolled.course_name}}</td>
+        <td>{{student.subject_chosen.subject_name}}</td>
+    </tr>
+        
+    
+{%endfor%}
